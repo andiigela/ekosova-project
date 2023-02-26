@@ -1,0 +1,273 @@
+@font-face {
+    font-family: My;
+    src: url(../fonts/AllertaStencil-Regular.ttf);
+}
+@font-face {
+    font-family: ChakraPetch;
+    src: url(../fonts/ChakraPetch-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(121,94,255);
+}
+
+.signupForm{
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 3.5px 2px 10px rgb(111, 82, 255);
+}
+.signupForm input {
+    padding: 14px 20px;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    height: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(243, 240, 240);
+    font-size: 16px;
+    font-family: "ChakraPetch";
+}
+.signupForm input:focus{
+    background-color: white;
+    transition: all 0.49s ease 0s;
+}
+.signupForm .moshaGjiniaContainer {
+    display: flex;
+    align-items: center;
+}
+.signupForm .moshaGjiniaContainer .gjiniaContainer Label{ 
+   font-size: 15px;
+   font-family: "My";
+   color: rgb(75, 75, 75);;
+}
+.signupForm .moshaGjiniaContainer .gjiniaContainer{ 
+    margin-left: 18.5px;
+ }
+ .signupForm .moshaGjiniaContainer .gjiniaContainer input{
+    margin-left: 8px;
+    margin-right: 8px;
+    vertical-align: bottom;
+ }
+ .signupForm .moshaGjiniaContainer .moshaInput {
+    padding-left: 30px;
+    padding-right:66px;
+ }
+ .signupForm .userDetails .signupButton {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+ }
+
+ .signupForm .userDetails .signupButton button{
+    padding: 10px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    outline: none;
+    border:0;
+    cursor: pointer;
+    border-radius: 35px;
+    font-family: "My";
+    color: white;
+    background-color: rgb(111, 82, 255);
+    transition: background-color 0.30s;
+    
+ }
+ .signupForm .userDetails .signupButton button:hover{
+    background-color: rgb(132, 107, 254);
+ }
+ .signupForm .userDetails .orDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+ .signupForm .userDetails .orDiv .break1{
+    width: 50%;
+    margin-right: 5%;
+
+ }
+ .signupForm .userDetails .orDiv .break2 {
+    width: 50%;
+    margin-left: 5%;
+ }
+ .signupForm .userDetails .orDiv p {
+   text-transform: uppercase;
+   font-family: "My";
+   font-size: 12.5px;
+ }
+
+ .signupForm .loginButton{
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+ }
+ .signupForm .loginButton button {
+   padding: 10px;
+   padding-left: 140px;
+   padding-right: 140px;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-transform: uppercase;
+   outline: none;
+   border:0;
+   cursor: pointer;
+   border-radius: 35px;
+   font-family: "My";
+   background-color: rgb(255, 70, 70);
+   transition: background-color 0.30s;
+ }
+ .signupForm .userDetails .loginButton button:hover {
+   background-color: rgb(255, 90, 90);
+ }
+ .signupForm .userDetails .loginButton a {
+   text-decoration: none;
+   color: rgb(61, 57, 57);
+ }
+ .signUpErrors #error {
+   color: white;
+   font-family: 'ChakraPetch';
+   font-size: 1rem;
+   text-align: center;
+ 
+   background-color: red;
+    padding: 5px 0 5px 0;
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+    display: none;
+ }
+@media only screen and (max-width:540px) and (min-width:452px){
+   .signupForm {
+      width: 450px;
+   }
+   .signupForm input {
+      padding: 14px 10px;
+   }
+  .signupForm .moshaGjiniaContainer .moshaInput {
+      padding-left: 30px;
+      padding-right: 46px
+   }
+}
+@media only screen and (max-width:451px) and (min-width:371px){
+   .signupForm {
+      width: 370px;
+   }
+   .signupForm .moshaGjiniaContainer .moshaInput {
+      padding-left: 10px;
+      padding-right: 56px;
+   }
+   .signupForm input {
+      padding: 14px 0px;
+      padding-left: 10px;
+   }
+   input[type="text"],input[type="email"],input[type="password"]{
+      width: 150px;
+      font-size: 12px;
+   }
+   input[type="date"]{
+      font-size: 12px;
+   }
+   .signupForm .moshaGjiniaContainer .gjiniaContainer Label{
+      font-size: 12px;
+   }
+   .signupForm .loginButton button{
+      padding-left: 130px;
+      padding-right: 130px;
+      padding-top: 10px;
+      padding-bottom: 10px;   
+   }
+   .signupForm .loginButton button {
+      padding-left: 130px;
+      padding-right: 130px;
+      padding-top: 10px;
+      padding-bottom: 10px; 
+   }
+   .signupForm .userDetails .orDiv .break1{
+      width: 40%;
+      margin-right: 5%;
+      margin-left: 3%;
+   }
+   .signupForm .userDetails .orDiv .break2{
+      width: 40%;
+      margin-right: 5%;
+   
+   }
+}
+@media only screen and (max-width:370px){
+   .signupForm {
+      width: 290px;
+      
+   }
+   .signupForm .moshaGjiniaContainer .moshaInput {
+      padding-left: 10px;
+      padding-right: 37px;
+   }
+   .signupForm input {
+      padding: 10px 0px;
+      padding-left: 5px;
+   }
+   input[type="text"],input[type="email"],input[type="password"]{
+      width: 120px;
+      font-size: 10px;
+   }
+   input[type="date"]{
+      font-size: 10px;
+   }
+   .signupForm .moshaGjiniaContainer .gjiniaContainer Label{
+      font-size: 10px;
+   }
+   .signupForm .moshaGjiniaContainer .gjiniaContainer input{
+      margin: 0px;
+
+   }
+   .signupForm .moshaGjiniaContainer .gjiniaContainer {
+      margin-right: 20px;
+   }
+   .signupForm .userDetails .signupButton button{
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 10px;
+      padding-bottom: 10px;   
+   }
+   .signupForm .loginButton button{
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 10px;
+      padding-bottom: 10px; 
+   }
+   .signupForm .userDetails .orDiv .break1{
+      width: 40%;
+      margin-right: 5%;
+      margin-left: 3%;
+   }
+   .signupForm .userDetails .orDiv .break2{
+      width: 40%;
+      margin-right: 5%;
+   
+   }
+}
+

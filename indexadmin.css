@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    margin: 0;
+    background-color: rgb(48, 114, 255);
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.left-side{
+    margin-left: 100px;
+}
+.left-side ul{
+    display: flex;
+    align-items: center;   
+}
+.left-side ul li {
+    list-style-type: none;
+    margin-left: 30px;
+   
+}
+.left-side ul li a {
+    text-decoration: none;
+    color: white;
+}
+.right-side {
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+.right-side p {
+    margin-right: 15px;
+}
+.manage-users .title-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.manage-users .users-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

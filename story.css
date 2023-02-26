@@ -1,0 +1,364 @@
+
+@font-face {
+    font-family: ChakraPetch;
+    src: url(../fonts/ChakraPetch-Regular.ttf);
+}
+@font-face { 
+    font-family: Diplomata;
+    src: url(../fonts/PressStart2P-Regular.ttf);
+}
+#mheader {
+    background-image: url("../images/editedImg.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-size: cover;
+    /* background-position: center; */
+    width: 100%;
+    height: 100vh;
+}
+.nav { 
+    display: flex;
+    justify-content: space-around;
+    padding: 26px;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+   
+}
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.navigation ul li {
+    list-style-type: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: ChakraPetch;
+
+    
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 2px;
+}
+.fa-brands {
+    font-size: 20px;
+    margin-left: 15px;
+    color: white;
+}
+.first-p h1 {
+    font-family: "Diplomata";
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+}
+.first-p p {
+    font-family: "ChakraPetch";
+    color: white;
+    font-size: 16px;
+}
+.e-kosova {
+    margin-top: 10%;
+    margin-left: 9%;
+}
+.second-p {
+    margin-top: 2%;
+    
+}
+.third-p {
+    margin-top: 2%;
+}
+.second-p .secondTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.third-p .thirdTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+}
+.third-p .thirdTitle .third{
+    color: white;
+    font-family: "Diplomata";
+    line-height: 30px;
+    font-size: 13px;
+    margin-left: 17px;
+    
+}
+.third-p .thirdParagraph {
+    color: white;
+    font-family: "ChakraPetch";
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.second-p .secondTitle .second{
+    color: white;
+    font-family: "Diplomata";
+    line-height: 30px;
+    font-size: 13px;
+    margin-left: 17px;
+}
+.second-p .secondParagraph {
+    color: white;
+    font-family: "ChakraPetch";
+    font-size: 14px;
+    margin-top: 8px;
+}
+label{
+    font-size: 30px;
+    display: none;
+}
+#toggle {
+    display: none;
+}
+@media screen and (max-width: 751px){
+    #mheader{
+        width: 100%;
+        height: 160vh;
+    }
+    label[for="toggle"]{
+        display: block;
+        color: white;
+        padding: 20px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    input[type="checkbox"]:checked + .container .nav{
+        display: block;
+    }
+    .nav .logo {
+        display: block;
+        margin-left: 5px;
+            
+    }
+    .navigation ul {
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .navigation ul li{
+        margin-top: 10px;
+    }
+    .navigation ul {
+        margin-bottom: 15px;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+    }
+    .icons {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 430px) and (min-width:360px){
+    #mheader{
+        width: 100%;
+        height: 160vh;
+    }
+    label[for="toggle"]{
+        display: block;
+        color: white;
+        padding: 20px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    input[type="checkbox"]:checked + .container .nav{
+        display: block;
+    }
+    .nav .logo {
+        display: block;
+        margin-left: 5px;
+            
+    }
+    .navigation ul {
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .navigation ul li{
+        margin-top: 10px;
+    }
+    .navigation ul {
+        margin-bottom: 15px;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+    }
+    .icons {
+        margin-left: 50px;
+    }
+    .first-p h1 {
+        font-family: "Diplomata";
+        font-size: 20px;
+        line-height: 40px;
+        color: white;
+    }
+    .first-p p {
+        font-family: "ChakraPetch";
+        color: white;
+        font-size: 14.5px;
+    }
+    .e-kosova {
+        margin-top: 10%;
+        margin-left: 9%;
+    }
+    .second-p {
+        margin-top: 2%;
+        
+    }
+    .third-p {
+        margin-top: 2%;
+    }
+    .second-p .secondTitle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .third-p .thirdTitle {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        
+    }
+    .third-p .thirdTitle .third{
+        color: white;
+        font-family: "Diplomata";
+        line-height: 30px;
+        font-size: 13px;
+        margin-left: 17px;
+        
+    }
+    .third-p .thirdParagraph {
+        color: white;
+        font-family: "ChakraPetch";
+        font-size: 12px;
+        margin-top: 7px;
+    }
+    
+    .second-p .secondTitle .second{
+        color: white;
+        font-family: "Diplomata";
+        line-height: 30px;
+        font-size: 12px;
+        margin-left: 17px;
+    }
+    .second-p .secondParagraph {
+        color: white;
+        font-family: "ChakraPetch";
+        font-size: 13px;
+        margin-top: 8px;
+    }
+}
+@media screen and (max-width: 360px){
+    #mheader{
+        width: 100%;
+        height: 160vh;
+    }
+    label[for="toggle"]{
+        display: block;
+        color: white;
+        padding: 20px;
+        margin-left: 15px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    input[type="checkbox"]:checked + .container .nav{
+        display: block;
+    }
+    .nav .logo {
+        display: block;
+        margin-left: 5px;
+        width: 100px;
+    }
+    .navigation ul {
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .navigation ul li{
+        margin-top: 10px;
+    }
+    .navigation ul {
+        margin-bottom: 15px;
+    }
+    .navigation ul li a {
+        font-size: 15px;
+    }
+    .icons i {
+        font-size: 15px;
+    }
+    
+    .nav {
+        display: none;
+        flex-direction: column;
+    }
+    .icons {
+        margin-left: 50px;
+    }
+    .first-p h1 {
+        font-size: 15px;
+        line-height: 32px;
+    }
+    .first-p p {
+        font-size: 14.5px;
+    }
+    .e-kosova {
+        margin-top: 10%;
+        margin-left: 9%;
+    }
+    .second-p {
+        margin-top: 2%;
+        
+    }
+    .third-p {
+        margin-top: 2%;
+    }
+    .second-p .secondTitle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .third-p .thirdTitle {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        
+    }
+    .third-p .thirdTitle .third{
+        color: white;
+        font-family: "Diplomata";
+        line-height: 30px;
+        font-size: 10px;
+        margin-left: 17px;
+        
+    }
+    .third-p .thirdParagraph {
+        color: white;
+        font-family: "ChakraPetch";
+        font-size: 10.5px;
+        margin-top: 7px;
+    }
+    
+    .second-p .secondTitle .second{
+        color: white;
+        font-family: "Diplomata";
+        line-height: 30px;
+        font-size: 10px;
+        margin-left: 17px;
+    }
+    .second-p .secondParagraph {
+        color: white;
+        font-family: "ChakraPetch";
+        font-size: 10.5px;
+        margin-top: 8px;
+    }
+}
