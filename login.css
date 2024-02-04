@@ -1,0 +1,166 @@
+@font-face {
+    font-family: My;
+    src: url(../fonts/AllertaStencil-Regular.ttf);
+}
+@font-face {
+    font-family: ChakraPetch;
+    src: url(../fonts/ChakraPetch-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(121, 94, 255);
+   
+    
+}
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 5.5%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    background-color: white;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    min-width: 20%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 3.5px 2px 10px rgb(111, 82, 255);
+}
+.userPass input {
+    padding: 14px 20px;
+    width: 300px;
+    display: flex;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    height: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(243, 240, 240);
+    font-size: 16px;
+    font-family: "ChakraPetch";
+    
+}
+.userPass input:focus{
+    background-color: white;
+    transition: all 0.49s ease 0s;
+}
+.userPass .passwordInput {
+    margin-top: 10px;
+}
+.userPass label {
+    display: flex;
+    justify-content: center;
+}
+.loginForm .paragraphBtns {
+    display: flex;
+    margin-top: 3.5px;
+}
+.loginForm .paragraphBtns .f1{
+    margin-right: 70px; 
+}
+.loginForm .paragraphBtns .f2{
+    margin-left: 70px; 
+}
+.loginForm .button {
+    margin-top: 20px;
+}
+.loginForm .button button {
+    padding: 10px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    border-radius: 35px;
+    font-family: "My";
+    color: white;
+    background-color: rgb(111, 82, 255);
+    transition: background-color 0.30s;
+}
+.loginForm .button button:hover {
+    background-color: rgb(132, 107, 254);
+}
+
+.signUp{
+    margin-top: 8px;
+}
+.paragraphBtns p {
+    font-family: "My";
+    color: rgb(75, 75, 75);
+    font-size:14px;
+    
+    
+}
+.signUp p {
+    font-family: "My";
+    color: rgb(75, 75, 75);
+    font-size:14px;
+    text-decoration: none;
+}
+.loginForm p a{
+    text-decoration: none;
+    color: rgb(75,75,75);
+}
+/* .passwordRegexError{
+    background-color: red;
+    margin-top: 5px;
+    text-align: center;
+} */
+
+@media only screen and (max-width:365px){
+    .loginForm {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 65px;
+        
+    }
+    .userPass input {
+        padding: 14px 20px;
+        width: 195px;
+        display: flex;
+        border: 0;
+        outline: none;
+        border-radius: 5px;
+        height: 20px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(243, 240, 240);
+        font-size: 16px;
+        font-family: "ChakraPetch";
+    }
+    .loginForm .button button {
+        padding: 8px;
+        padding-left: 95px;
+        padding-right: 95px;
+    }
+    .loginForm .paragraphBtns .f1{
+        margin-right: 0px; 
+        font-size: 13px;
+    }
+    .loginForm .paragraphBtns .f2{
+        margin-right: 0px; 
+        font-size: 13px;
+    }
+    .loginForm .signUp p{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: red;
+        font-size: 13px;
+    }
+    
+
+}
+
